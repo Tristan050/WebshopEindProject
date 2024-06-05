@@ -1,0 +1,21 @@
+.review-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .rating {
+    font-size: 24px;
+    color: #ff9900;
+  }
+  
+  .star {
+    margin: 0 2px;
+  }
+  
+  .reviewer-name {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  

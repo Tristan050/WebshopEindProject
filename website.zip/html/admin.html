@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard </title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    
+
+    <div class="logo-details">
+      <i class='bx bxl-html'></i>
+      <span class="logo_name">The Tennis Webshop</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+            
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <a class="text-success" href="index.html">| Terug naar Home |</a>
+        <i class=' sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="profile-details">
+        
+        <span class="admin_name">Tristan Zuidhof</span>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      
+      <div class="overview-boxes">
+        <div id="add-product" class="container mt-4">
+          <h3 class="mb-3">Welkom!</h3>
+          <h3>Voeg een product toe</h3>
+          <form id="product-form">
+              <div class="mb-3">
+                  <label for="product-name" class="form-label">Naam:</label>
+                  <input type="text" class="form-control" id="product-name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="product-price" class="form-label">Prijs:</label>
+                  <input type="number" class="form-control" id="product-price" step="0.01" required>
+              </div>
+              <div class="mb-3">
+                  <label for="product-image" class="form-label">Afbeelding URL:</label>
+                  <input type="url" class="form-control" id="product-image" required>
+              </div>
+              <button type="submit" class="btn btn-success" id="voeg">Voeg toe aan webshop</button>
+
+          </form>
+          <div class="admin-buttons mt-4">
+            <button id="remove-product-button" class="btn btn-danger">Verwijder Product</button>
+            <button id="reset-products-button" class="btn btn-danger">Reset Producten</button>
+        </div>
+
+      </div>
+      
+
+      
+      <form id="edit-product-form" class="container mt-4">
+        <h3>Wijzig een product</h3>
+          <div class="mb-3">
+              <label for="product-id" class="form-label">Product ID:</label>
+              <input type="text" class="form-control" id="product-id" required>
+          </div>
+          <div class="mb-3">
+              <label for="new-product-name" class="form-label">Nieuwe naam:</label>
+              <input type="text" class="form-control" id="new-product-name">
+          </div>
+          <div class="mb-3">
+              <label for="new-product-price" class="form-label">Nieuwe prijs:</label>
+              <input type="number" class="form-control" id="new-product-price" step="0.01">
+          </div>
+          <div class="mb-3">
+              <label for="new-product-image" class="form-label">Nieuwe afbeelding URL:</label>
+              <input type="text" class="form-control" id="new-product-image">
+          </div>
+          <button type="submit" class="btn btn-primary mb-5">Wijzig product</button>
+      </form>
+      
+      
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Totale Orders</div>
+            <div class="number" id="total-order-count">0</div>            
+            <div class="indicator">
+            </div>
+          </div>
+          <i class='bx bx-cart-alt cart'></i>
+        </div>
+    
+      </div>
+
+      <div class="sales-boxes">
+        
+        <div class="sales-container">
+          <div class="recent-sales box">
+              <div class="title">Bestel Overzicht</div>
+              <div class="sales-details">
+                  <ul class="details" id="recent-sales-list">
+                  </ul>
+              </div>
+          </div>
+      
+          <div class="recent-sales box">
+            
+              <div class="title" id="product-overview"> Huidige Producten Overzicht</div>
+              <div class="sales-details">
+                  <ul class="details" id="recent-sales-listt">
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+  </section>
+
+
+<script src="js/admin.js"></script>
+
+
+</body>
+</html>
