@@ -21,5 +21,3 @@ CSS: De opmaak en stijl van de pagina's wordt beheerd met CSS.
 JavaScript: De interactieve functies, zoals het beheren van producten en het resetten ervan, worden geïmplementeerd met JavaScript.
 
 Bootstrap: Bootstrap is gebruikt om de gebruikersinterface te stylen en de knoppen een aantrekkelijke uitstraling te geven.
-
-WEBSITE LINK: https://tristantennis.netlify.app/
